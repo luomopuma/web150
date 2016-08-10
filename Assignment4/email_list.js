@@ -35,7 +35,7 @@ var joinList = function () {
 		document.getElementById('last_name_error').innerHTML = '';
 	}
 
-	if (emailAddress2 != emailAddress1){
+	if (emailAddress2.toLowerCase() != emailAddress1.toLowerCase()){
 		document.getElementById('email_address2_error').innerHTML = 'Field must match the first entry.';
 		isValid = false;
 	} else {
