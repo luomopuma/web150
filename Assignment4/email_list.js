@@ -13,23 +13,33 @@ var joinList = function () {
 	if (emailAddress1 == ''){
 		document.getElementById('email_address1_error').innerHTML = 'This field required.'; 
 		isValid = false;
+	} else {
+		document.getElementById('email_address1_error').innerHTML = '';
 	}
 	if (emailAddress2 == ''){
 		document.getElementById('email_address2_error').innerHTML = 'This field required.';
 		isValid = false; 
+	} else {
+		document.getElementById('email_address2_error').innerHTML = '';
 	}
 	if (firstName == ''){
 		document.getElementById('first_name_error').innerHTML = 'This field required.';
 		isValid = false; 
+	} else {
+		document.getElementById('first_name_error').innerHTML = '';
 	}
 	if (lastName == ''){
 		document.getElementById('last_name_error').innerHTML = 'This field required.';
 		isValid = false; 
+	} else {
+		document.getElementById('last_name_error').innerHTML = '';
 	}
 
 	if (emailAddress2 != emailAddress1){
 		document.getElementById('email_address2_error').innerHTML = 'Field must match the first entry.';
 		isValid = false;
+	} else {
+		document.getElementById('email_address2_error').innerHTML = '';
 	}
 
 	// submit the form if all entries are valid
