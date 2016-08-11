@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Join Email List</title>
+   	<link rel="stylesheet" href="main.css">
+   	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+   	<script src="index.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Bill Calculator</h1>
+        <form id="bill_calculator" name="bill_calculator" action="success.html" method="get">
+	        <label for="subtotal">Bill Subtotal:</label>
+	        <input type="number" id="subtotal" name="subtotal">
+	        <span id="subtotal_error">*</span><br>
+	        
+	        <label for="Tax Rate">Tax Rate:</label>
+	        <input type="number" id="tax_rate" name="tax_rate">
+	        <span id="tax_rate_error">*</span><br>
+                  
+	        <label for="sales_tax">Sales Tax:</label>
+	        <input type="number" id="sales_tax" class="calculated" name="sales_tax" value=0.0>
+			<br>
+
+			<label for="total">Total:</label>
+	        <input type="number" id="total" class="calculated" name="total" value=0.0>
+	  		<br>
+
+	        <label>&nbsp;</label>
+	        <input type="button" id="calculate_bill" value="Calculate Bill"><br>
+	    </form>
+    </section>
+</body>
+</html>
