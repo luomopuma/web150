@@ -8,9 +8,6 @@ var calculate = function () {
     var total = subtotal + sales_tax;
     var isValid = true;
 
-    console.log(sales_tax);
-    console.log(total);
-
     if(subtotal == ''){
         document.getElementById("subtotal_error").innerHTML = 'Please enter a positive number less than 1000.';
         isValid = false;
@@ -27,8 +24,6 @@ var calculate = function () {
 
      // calculate and update
      if(isValid){
-        console.log(sales_tax);
-        console.log(total);
         document.getElementById("sales_tax").value = sales_tax;
         document.getElementById("total").value = total;
      }

@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Food Cart</title>
+   	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+   	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+
+<body>
+	<section id="menu">
+		<small>Click an item to add it to your order.</small>
+		<div id="accordion">
+		<h3>Appetizers</h3>
+			<ul id="appetizers">
+				<li>Salad</li>
+				<li>Soup</li>
+				<li>Breadcrumbs</li>
+			</ul>
+			<h3>Main Courses</h3>
+			<ul id="mains">
+				<li>Burger</li>
+				<li>Pizza</li>
+				<li>Steak</li>
+			</ul>
+			<h3>Desserts</h3>
+			<ul id="desserts">
+				<li>Ice Cream</li>
+				<li>Cake</li>
+				<li>Pie</li>
+			</ul>
+		</div><!-- accordion -->
+		<a href="https://github.com/luomopuma/web150">Source code</a>
+	</section>
+
+    <section id="total">
+        <h2>Order Summary</h2>
+        <form id="order_summary" name="order_summary" action="success.html" method="get">
+	        
+			<label for="subtotal">Bill Subtotal:</label>
+	        <input type="number" id="subtotal" name="subtotal" value=0.0 disabled>
+	        <br>
+	        
+	        <label for="Tax Rate">Tax Rate:</label>
+	        <input type="number" id="tax_rate" name="tax_rate" value=9.5 disables>
+	        <br>
+                  
+	        <label for="sales_tax">Sales Tax:</label>
+	        <input type="number" id="sales_tax" name="sales_tax" value=0.0 disabled>
+			<br>
+
+			<label for="total">Total:</label>
+	        <input type="number" id="order_total" name="order_total" value=0.0 disabled>
+	  		<br>
+
+			<input type="button" id="submit" value="Submit Order">
+			<input type="button" id="clear" value="Clear">
+	    </form>
+		
+    </section>
+	<script src="index.js"></script>
+</body>
+</html>
