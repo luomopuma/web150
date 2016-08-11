@@ -33,14 +33,33 @@ $(document).ready(function(x){
 // Adds a specified amount to the total and updates the order summary
 var calculate = function(x){
     subtotal += x;
-    document.getElementById("subtotal").value = subtotal;
+    $('#subtotal')[0].value = subtotal;
 
-    tax_rate = parseFloat(document.getElementById("tax_rate").value);
+    tax_rate = parseFloat($('#tax_rate')[0].value);
     sales_tax = (subtotal * (tax_rate / 100));
-    document.getElementById("sales_tax").value = sales_tax.toFixed(2);
+    $('#sales_tax')[0].value = sales_tax.toFixed(2);
 
     total = (subtotal + sales_tax).toFixed(2);
-    console.log(total);
-    document.getElementById("order_total").value = total;
+    $('#order_total')[0].value = total;
 
 }
+
+// Clears cart of current amounts
+var clear_cart = function(){
+    console.log("clear_cart");
+    $('#subtotal')[0].value = 0.0;
+    $('#sales_tax')[0].value = 0.0;
+    $('#order_total')[0].value = 0.0;
+}
+
+// Submits order and displays success.html
+var submit_order = function(){
+    console.log("clicked submit");
+    $("form:first").submit();
+}
+
+window.onload = function(){
+    $("#clear").on('click',clear_cart);
+    $("#send_order").on('click',submit_order);
+}
+
