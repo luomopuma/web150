@@ -24,6 +24,18 @@ label {
 ul{
     list-style:none;
 }
+ul#appetizers{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+ul#mains{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+ul#desserts{
+    padding-left: 2%;
+    padding-right: 2%;
+}
 input {
     margin-left: 1em;
     margin-bottom: .5em;
@@ -31,6 +43,8 @@ input {
 span {
 	color: red;
 }
-li {
+li:hover {
+    width: 100%;
     cursor: pointer;
+    background: lightblue;
 }
