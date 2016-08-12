@@ -31,3 +31,6 @@ input {
 span {
 	color: red;
 }
+li {
+    cursor: pointer;
+}
