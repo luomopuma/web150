@@ -60,8 +60,11 @@
 	        <input type="number" id="order_total" name="order_total" value=0.0 disabled>
 	  		<br>
 
-			<input type="button" id="send_order" value="Submit Order">
-			<input type="button" id="clear" value="Start Over">
+			<input type="button" id="send_order" value="Submit Order" title="Send us your order with this button!">
+			<input type="button" id="clear" value="Start Over" title="Remove all items from your cart with this button!">
+			<script>
+  				$( 'button' ).tooltip();
+	        </script>
 	    </form>
 		
     </section>
