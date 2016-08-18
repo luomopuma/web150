@@ -2,7 +2,7 @@ article, aside, figure, footer, header, nav, section {
     display: block;
 }
 #content {
-    padding: 3%;
+    padding: 1%;
     background-color: white;
     margin: 0 auto;
     width: 75%;
@@ -21,7 +21,7 @@ section#menu{
     vertical-align: top;
 }
 section#total{
-    width:45%;
+    width:40%;
     display:inline-block;
     vertical-align:top;
     padding-top: 3%;
