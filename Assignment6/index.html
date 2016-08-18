@@ -7,9 +7,14 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
    	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
    	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	   
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="assets/cool-share/plugin.css" media="all" rel="stylesheet" />
 </head>
 
 <body>
+	<div id = "content">
+		<h2><em>Order some food!</em></h2>
 	<section id="menu">
 		<small>Click an item to add it to your order.</small>
 		<div id="accordion">
@@ -32,8 +37,8 @@
 				<li>Pie</li>
 			</ul>
 		</div><!-- accordion -->
-		<a href="https://github.com/luomopuma/web150">Source code</a>
-	</section>
+		
+	</section> <!-- menu -->
 
     <section id="total">
         <h2>Order Summary</h2>
@@ -60,6 +65,23 @@
 	    </form>
 		
     </section>
+	
 	<script src="index.js"></script>
+	
+	<p><span class="socialShare">Share<!-- Share buttons inserted here --></span></p>
+	<a href="https://github.com/luomopuma/web150">Source code</a>
+	</div><!-- content -->
+
+	<footer>
+		<!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+
+		<!-- The plugin source -->
+		<script src="assets/cool-share/plugin.js"></script>
+
+		<!-- Demo page source -->
+		<script src="assets/js/demo.js"></script>
+		
+	</footer>
+
 </body>
 </html>

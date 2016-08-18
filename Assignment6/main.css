@@ -1,13 +1,14 @@
 article, aside, figure, footer, header, nav, section {
     display: block;
 }
-body {
-    display:flex;
+#content {
+    padding: 3%;
     background-color: white;
     margin: 0 auto;
-    width: 100%;
+    width: 75%;
     height: 100%;
     border: 3px solid gray;
+    margin-top: 5%;
 }
 section {
     padding: 0 2em 1em;
@@ -15,6 +16,15 @@ section {
 }
 section#menu{
     padding-top:3%;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+section#total{
+    width:45%;
+    display:inline-block;
+    vertical-align:top;
+    padding-top: 3%;
 }
 label {
 	float: left;
@@ -40,11 +50,12 @@ input {
     margin-left: 1em;
     margin-bottom: .5em;
 }
-span {
-	color: red;
-}
 li:hover {
     width: 100%;
     cursor: pointer;
     background: lightblue;
+}
+h2.category{
+    margin:auto;
+    text-align:center;
 }
